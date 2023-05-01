@@ -3,6 +3,145 @@
 @import 'reset';
 @import 'global';
 
+.header{
+padding: 40px 0 60px;
+}
+
+.header-top{
+    display: flex;
+    /*gap: 0 109px;*/
+    justify-content: space-between;
+    align-items: center;
+    &__phone{
+    @extend %roboto-500;
+    color: $black;
+    font-size: 18px;
+    transition: all .3s;
+    padding-left: 31px;
+    margin-right: 32px;
+    margin-left: 15px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        background-image: url(../images/icons/phone.svg);
+        left: 0;
+    }   
+    &:hover{
+        color: $accent;
+    }
+    }
+
+    &__language{
+    @extend %roboto-500;
+    font-size: 18px;
+    margin-right: 32px;
+    span{
+            color: $black;
+    }
+    }
+    &__language--ua{
+        color: $accent;
+    }
+
+    &__language--en{
+        color: $black;
+        transition: all .2s;
+        
+        &:hover{
+            color: $accent;
+        }
+    }
+
+    &__box{
+        span{
+            @extend %roboto-500;
+            font-size: 18px;
+            margin: 0 15px 0 15px;
+        }
+    }
+    &__login,
+    &__signup{
+        @extend %roboto-500;
+        font-size: 18px;
+        color: $black;
+        transition: all .2s;
+        padding-left: 34px;
+        position: relative;        
+        &:hover{
+            color: $accent;
+        }
+    }
+
+    &__login::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 5px;
+        background-image: url(../images/icons/login.svg);
+        width: 22px;
+        height: 12px;
+    }
+
+
+    &__signup::before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 22px;
+    height: 16px;
+    background-image: url(../images/icons/signup.svg);
+    }
+    
+
+    &__cart{
+        @extend %roboto-500;
+        font-size: 18px;
+        color: $black;
+        transition: all .2s;
+        padding-left: 31px;
+        margin-right: 13px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url(../images/icons/cart.svg);
+            left: 0;
+        }
+        &:hover{
+            color: $accent;
+        }
+    }
+}
+
+.line{
+    margin: 0 auto;
+    margin-top: 27px;
+}
+
+.menu{
+    margin-top: 27px;
+    &__list{
+        display: flex;
+        justify-content: center;
+        gap: 0 105px;
+    }
+    &__list-link{
+        @extend %roboto-500;
+        font-size: 18px;
+        color: $black;
+        transition: all .2s;
+        &:hover{
+            color: $accent;
+        }
+    }
+}
+
 
 
 
