@@ -5,7 +5,12 @@
 
 .header{
 padding: 40px 0 60px;
+    &__line{
+    margin: 0 auto;
+    margin-top: 27px;
+    }
 }
+
 
 .header-top{
     display: flex;
@@ -119,10 +124,6 @@ padding: 40px 0 60px;
     }
 }
 
-.line{
-    margin: 0 auto;
-    margin-top: 27px;
-}
 
 .menu{
     margin-top: 27px;
@@ -143,7 +144,99 @@ padding: 40px 0 60px;
 }
 
 
+.footer{
+    background-color: $grey;
+    padding-top: 55px;
+    padding-bottom: 35px;
+}
 
+.footer-top{
+display: flex;
+    &__contact{
+    width: 328px;
+    margin-right: 90px;
+    }
+    &__logo{
+        display: block;
+        margin-bottom: 42px;
+        margin-left: 10px;
+    }
+    &__phone{
+    display: block;
+    @extend %roboto-500;
+    font-size: 18px;
+    color: $black;
+    padding-left: 31px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    position: relative;
+    transition: all .2s;
+        &:hover{
+        color: $accent;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 19px;
+            height: 19px;
+            background-image: url(../images/icons/phone.svg);
+            left: 0;
+        }
+    }
+    &__address{
+        display: block;
+        margin-left: 10px;
+        @extend %opensans-400;
+        font-size: 16px;
+        color: $black;
+        margin-bottom: 55px;
+        transition: all .2s;
+        &:hover{
+            color: #000;
+        }
+    }
+
+    &__nav--1{
+        width: 150px;
+        /* max-width: 150px; */
+        /*width: 100%; */
+        margin-right: 99px;
+       /* width: 133px; */
+       /* margin-right: 116px; */
+    }
+    &__nav--2{
+        width: 150px;
+        margin-right: 120px;
+    }
+    &__title{
+        @extend %opensans-500;
+        font-size: 18px;
+        color: $moreblack;
+        margin-bottom: 30px;
+    }   
+    &__link{
+        @extend %opensans-400;
+        display: block;
+        color: $black;
+        font-size: 16px;
+        margin-bottom: 17px;
+        transition: all .2s;
+        &:hover{
+            color: #000;
+        }
+    }
+}
+
+
+.footer-bottom{
+    &__rights{
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+        font-size: 16px;
+        @extend %opensans-300;
+    }
+}
 
 
 @import 'media';
