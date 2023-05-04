@@ -417,9 +417,75 @@ margin-bottom: 60px;
 .contacts-map{
     margin-top: 100px;
     padding-bottom: 75px;
-
 }
 
+
+
+.deliveryandpayment{
+    padding: 85px 0 70px;
+    
+    
+}
+
+.delivery{
+    &__title{
+    font-size: 24px;
+    @extend %inter-700;
+    color: $moreblack;
+    margin-bottom: 22px;
+    }
+    &__text{
+    @extend %opensans-500;
+    font-size: 16px;
+    color: $moreblack;
+    margin-bottom: 12px;
+    }
+    &__text:nth-child(4){
+        margin-top: -2px;
+        max-width: 1100px;
+        line-height: 26px;
+    }
+
+    &__text-settlement{
+        @extend %opensans-500;
+        font-size: 16px;
+        color: $moreblack;
+        margin-bottom: 5px;
+    }
+
+    &__text--last{
+    margin-top: 9px;
+    }
+}
+
+
+.payment{
+    &__title{
+        font-size: 24px;
+        @extend %inter-700;
+        color: $moreblack;
+        margin-bottom: 22px;
+        margin-top: 50px;
+    }
+
+    &__text{
+        @extend %opensans-500;
+        font-size: 16px;
+        color: $moreblack;
+        margin-bottom: 12px;
+    }
+
+    &__text-method{
+        @extend %opensans-500;
+        font-size: 16px;
+        color: $moreblack;
+        margin-bottom: 5px;
+    }
+    &__text--4{
+        margin-top: 9px;
+    }
+
+}
 
 
 @import 'media';
