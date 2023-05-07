@@ -827,7 +827,49 @@ margin-bottom: 60px;
             background-color: #CD4321;
         }
     }    
+}
 
+.changepassword{
+    padding-top: 60px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+    &__label{
+        display: block;
+        @extend %opensans-500;
+        font-size: 16px;
+        color: $moreblack;
+        margin-bottom: 20px;   
+    }
+    &__input{
+        display: block;
+        max-width: 400px;
+        width: 100%;
+        height: 45px;
+        font-size: 17px;
+        padding: 0 12px;
+        margin-top: 7px;
+        border-radius: 5px;
+        border: 1px solid #CCCCCC;
+    }
+    &__btn{
+        width: 185px;
+        height: 45px;
+        display: block;
+        margin: 0 auto;
+        background-color: $accent;
+        border-radius: 15px;
+        border: none;
+        color: #fff;
+        @extend %opensans-400;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 40px;
+        transition: all .1s;
+        &:hover{
+            background-color: #CD4321;
+        }
+    }  
 }
 
 
