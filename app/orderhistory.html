@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Змінити пароль</title>
+    <title>Історія замовлень</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -20,7 +20,7 @@
                     <div class="header-top__language">
                         <a class="header-top__language--ua" href="#">UA</a>
                         <span>|</span>
-                        <a class="header-top__language--en" href="changepassword-en.html">EN</a>
+                        <a class="header-top__language--en" href="orderhistory-en.html">EN</a>
                     </div>
                     <a class="logo" href="index.html">
                         <img class="logo__img" src="images/icons/logo.svg" alt="header logo">
@@ -73,25 +73,36 @@
                             <a class="breadcrumbs__link" href="personalaccount.html">Особистий кабінет</a>
                         </li>
                         <li class="breadcrumbs__item">
-                            <span class="breadcrumbs__link">Змінити пароль</span>
+                            <span class="breadcrumbs__link">Історія замовлень</span>
                         </li>
                     </ul>
                 </div>
                 <h2 class="top__title">
-                    Змінити пароль
+                    Історія замовлень
                 </h2>
             </div>
         </section>
 
-        <section class="changepassword">
+
+        <section class="orderhistory">
             <div class="container">
-                <form class="changepassword__form" action="#">
-                    <label class="changepassword__label">
-                        Новий пароль:
-                        <input class="changepassword__input" type="password">
-                    </label>
-                    <button class="changepassword__btn" type="submit">Змінити</button>
-                </form>
+                <ul class="orderhistory__list">
+                    <li class="orderhistory__item">
+                        <a class="orderhistory__link" href="ordernumber.html">
+                            Замовлення №<span>924850</span>
+                            .................................................................................
+                            <span>18.04.2023 21:45</span>
+                        </a>
+                    </li>
+                    <li class="orderhistory__item">
+                        <a class="orderhistory__link" href="#">
+                            Замовлення №<span>733915</span>
+                            .................................................................................
+                            <span>07.05.2023 17:40</span>
+                        </a>
+                    </li>
+
+                </ul>
             </div>
         </section>
 
