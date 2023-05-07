@@ -41,7 +41,7 @@ body{
     &__link{
         color: $moreblack;
     }
-    &__item:nth-child(1){
+    &__item{
         padding-right: 18px;
         position: relative;
         &::after{
@@ -50,5 +50,12 @@ body{
           top: 0px;
           right: 5px;
         }
+        &:last-child{
+            padding-right: 0;
+            &::after{
+                display: none;
+            }
+        }
     }
+
 }
