@@ -572,6 +572,10 @@ margin-bottom: 60px;
         background-color: #CD4321;
         /*color: #E4E4E4;*/
     }
+    &:active{
+        color: #E4E4E4;
+        background-color: #B03A1C;
+    }
     }
 }
 
@@ -647,6 +651,10 @@ margin-bottom: 60px;
             background-color: #CD4321;
             /*color: #E4E4E4;*/
         }
+        &:active{
+            color: #E4E4E4;
+            background-color: #B03A1C;
+        }
         }
 }
 
@@ -692,6 +700,10 @@ margin-bottom: 60px;
         &:hover{
             background-color: #CD4321;
         }
+        &:active{
+            color: #E4E4E4;
+            background-color: #B03A1C;
+        }
     }
 }
 
@@ -736,6 +748,10 @@ margin-bottom: 60px;
         transition: all .1s;
         &:hover{
             background-color: #CD4321;
+        }
+        &:active{
+            color: #E4E4E4;
+            background-color: #B03A1C;
         }
     }
 
@@ -826,6 +842,10 @@ margin-bottom: 60px;
         &:hover{
             background-color: #CD4321;
         }
+        &:active{
+            color: #E4E4E4;
+            background-color: #B03A1C;
+        }
     }    
 }
 
@@ -868,6 +888,10 @@ margin-bottom: 60px;
         transition: all .1s;
         &:hover{
             background-color: #CD4321;
+        }
+        &:active{
+            color: #E4E4E4;
+            background-color: #B03A1C;
         }
     }  
 }
@@ -1107,6 +1131,10 @@ margin-bottom: 60px;
         &:hover{
             background-color: #CD4321;
         }
+        &:active{
+            color: #E4E4E4;
+            background-color: #B03A1C;
+        }
     }
 
     &__sum-number{
@@ -1120,5 +1148,116 @@ margin-bottom: 60px;
     }
 
 }
+
+.placinganorder{
+    padding-top: 60px;
+    margin-bottom: 50px;
+    &__form{
+        max-width: 370px;
+        margin: 0 auto;
+        margin-bottom: 70px;
+    }
+    &__label{
+        display: block;
+        @extend %opensans-500;
+        font-size: 16px;
+        color: $moreblack;
+        margin-bottom: 20px;   
+    }
+    &__input{
+        display: block;
+        max-width: 370px;
+        width: 100%;
+        height: 45px;
+        font-size: 17px;
+        padding: 0 12px;
+        margin-top: 7px;
+        border-radius: 5px;
+        border: 1px solid #CCCCCC;
+    }
+
+    &__paymethodform{
+        margin: 0 auto;
+        max-width: 540px;
+        padding-left: 80px;
+        margin-bottom: 90px;
+    }
+    &__paymethodform-label{
+        display: block;
+        margin-bottom: 13px;
+        
+        
+    }
+    &__paymethodform-input{
+        cursor: pointer;
+    }
+    &__paymethodform-title{
+        @extend %opensans-500;
+        font-size: 17px;
+        color: $moreblack;
+        margin-left: 5px;
+        margin-bottom: 18px;
+    }
+    &__paymethodform-span{
+        @extend %opensans-500;
+        font-size: 16px;
+        color: $moreblack;
+        cursor: pointer;
+        display: inline-block;
+        transform: translateY(-2px);
+    }
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 221px;
+        margin-right: 201px;
+    }
+    
+    &__sum{
+        @extend %opensans-600;
+        font-size: 22px;
+        color: $moreblack;
+        margin-bottom: 15px;
+    }
+
+    &__sum-including{
+            @extend %opensans-400;
+            display: block;
+            color: #c5c5c5;
+            font-size: 14px;
+            margin-left: 25px;
+    }
+
+    &__sum-number,
+    &__paymethod-type{
+        margin-left: 5px;
+    }
+
+    &__btn{
+        width: 220px;
+        height: 55px;
+        background-color: $accent;
+        border: none;
+        border-radius: 15px;
+        color: #fff;
+        @extend %opensans-400;
+        font-size: 17px;
+        transition: all .1s;
+        cursor: pointer;
+        margin-top: -3px;
+        &:hover{
+            background-color: #CD4321;
+        }
+        &:active{
+            color: #E4E4E4;
+            background-color: #B03A1C;
+        }
+    }
+    
+
+}
+
+
 
 @import 'media';

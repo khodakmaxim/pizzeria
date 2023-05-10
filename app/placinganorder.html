@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вхід</title>
+    <title>Оформлення замовлення</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -20,14 +20,14 @@
                     <div class="header-top__language">
                         <a class="header-top__language--ua" href="#">UA</a>
                         <span>|</span>
-                        <a class="header-top__language--en" href="login-en.html">EN</a>
+                        <a class="header-top__language--en" href="placinganorder-en.html">EN</a>
                     </div>
                     <a class="logo" href="index.html">
                         <img class="logo__img" src="images/icons/logo.svg" alt="header logo">
                     </a>
 
                     <div class="header-top__box">
-                        <a class="header-top__login" href="#">вхід</a>
+                        <a class="header-top__login" href="login.html">вхід</a>
                         <span>|</span>
                         <a class="header-top__signup" href="signup.html">реєстрація</a>
                     </div>
@@ -70,30 +70,65 @@
                             <a class="breadcrumbs__link" href="index.html">Головна</a>
                         </li>
                         <li class="breadcrumbs__item">
-                            <span class="breadcrumbs__link">Авторизація</span>
+                            <span class="breadcrumbs__link">Оформлення замовлення</span>
                         </li>
                     </ul>
                 </div>
                 <h2 class="top__title">
-                    Авторизація
+                    Оформлення замовлення
                 </h2>
             </div>
         </section>
 
-        <section class="login">
+        <section class="placinganorder">
             <div class="container">
-                <form class="login__form" action="#">
-                    <label class="login__label">
-                        Телефон:
-                        <input class="login__input" type="text" required>
+                <form class="placinganorder__form" action="#">
+                    <label class="placinganorder__label">
+                        Населений пункт:
+                        <input class="placinganorder__input" type="text">
                     </label>
-                    <label class="login__label">
-                        Пароль:
-                        <input class="login__input" type="password" required>
+                    <label class="placinganorder__label">
+                        Вулиця:
+                        <input class="placinganorder__input" type="text">
                     </label>
-                    <button class="login__btn" type="submit">Увійти</button>
-                    <a href="signup.html" class="login__signup">Не маєте акаунту? Не проблема!</a>
+                    <label class="placinganorder__label">
+                        Будинок:
+                        <input class="placinganorder__input" type="text">
+                    </label>
+                    <label class="placinganorder__label">
+                        Квартира:
+                        <input class="placinganorder__input" type="text">
+                    </label>
                 </form>
+                <form class="placinganorder__paymethodform" action="#">
+                    <h3 class="placinganorder__paymethodform-title">Спосіб оплати:</h3>
+                    <label class="placinganorder__paymethodform-label">
+                        <input class="placinganorder__paymethodform-input" type="radio" name="method">
+                        <span class="placinganorder__paymethodform-span">самовивіз (м. Вишневе, вулиця Європейська
+                            42)</span>
+                    </label>
+                    <label class="placinganorder__paymethodform-label">
+                        <input class="placinganorder__paymethodform-input" type="radio" name="method">
+                        <span class="placinganorder__paymethodform-span">карткою онлайн</span>
+                    </label>
+                    <label class="placinganorder__paymethodform-label">
+                        <input class="placinganorder__paymethodform-input" type="radio" name="method">
+                        <span class="placinganorder__paymethodform-span">готівкою кур'єру</span>
+                    </label>
+                    <label class="placinganorder__paymethodform-label">
+                        <input class="placinganorder__paymethodform-input" type="radio" name="method">
+                        <span class="placinganorder__paymethodform-span">карткою кур'єру</span>
+                    </label>
+                </form>
+                <div class="placinganorder__info">
+                    <div class="placinganorder__sum">Сума замовлення: <span class="placinganorder__sum-number">477
+                            грн</span>
+                        <span class="placinganorder__sum-including">
+                            (в т.ч. доставка 50 грн)
+                        </span>
+                    </div>
+                    <button class="placinganorder__btn">Замовити</button>
+                </div>
             </div>
         </section>
 
