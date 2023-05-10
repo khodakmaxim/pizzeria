@@ -1255,9 +1255,40 @@ margin-bottom: 60px;
         }
     }
     
-
 }
 
+
+.yourorder{
+    &__title{
+        text-align: center;
+        @extend %inter-600;
+        color: $moreblack;
+        font-size: 30px;
+        margin-bottom: 26px;
+    }
+
+    &__subtitle{
+        text-align: center;
+        @extend %inter-600;
+        color: $moreblack;
+        font-size: 28px;
+        margin-bottom: 72px;
+    }
+
+    &__img{
+        margin: 0 auto;
+        margin-bottom: 72px;
+    }
+
+    &__link{
+        display: block;
+        text-align: center;
+        @extend %inter-600;
+        color: $moreblack;
+        font-size: 26px;
+        margin-bottom: 75px;
+    }
+}
 
 
 @import 'media';
