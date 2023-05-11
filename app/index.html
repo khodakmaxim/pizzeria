@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Головна</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.min.css">
+
+
+
 </head>
 
 <body>
@@ -61,7 +65,51 @@
     </header>
 
     <main class="main">
+        <section class="top-slider">
+            <div class="container">
+                <div class="top-slider__inner">
+                    <div class="top-slider__item">
+                        <img class="top-slider__img" src="images/home/slider1.jpg" alt="top slider image">
+                    </div>
+                    <div class="top-slider__item">
+                        <img class="top-slider__img" src="images/home/slider2.jpg" alt="top slider image">
+                    </div>
+                    <div class="top-slider__item">
+                        <img class="top-slider__img" src="images/home/slider3.jpg" alt="top slider image">
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="info">
+            <div class="container">
+                <h1 class="info__title">
+                    PIZZA MAX - це нова доставка піци в місті Вишневому!
+                </h1>
+                <p class="info__text info__text--first">
+                    • Наші піци - це справжня італійська кухня з найкращих інгредієнтів.
+                </p>
+                <p class="info__text info__text--second">
+                    • Наші кулінари - це справжні професіонали, які готують кожну піцу з любов'ю та увагою до деталей.
+                </p>
+                <p class="info__text info__text--third">
+                    • Ми підтримуємо екологічний підхід, використовуючи тільки природні інгредієнти та пакування.
+                </p>
+                <h2 class="info__subtitle">
+                    Зробіть свій день ще більш смачним та приємним з нашою піцерією!
+                </h2>
+            </div>
+        </section>
+
+
+        <section class="text-map">
+            <div class="container">
+                <p class="text-map__address">
+                    Ми знаходимось за адресою: вулиця Європейська, 42, м. Вишневе
+                </p>
+                <div id="map"></div>
+            </div>
+        </section>
 
     </main>
 
@@ -124,7 +172,9 @@
         </div>
     </footer>
 
-
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+        defer></script>
     <script src="js/main.min.js"></script>
 </body>
 

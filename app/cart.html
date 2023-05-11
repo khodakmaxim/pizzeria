@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Кошик</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -20,7 +20,7 @@
                     <div class="header-top__language">
                         <a class="header-top__language--ua" href="#">UA</a>
                         <span>|</span>
-                        <a class="header-top__language--en" href="index-en.html">EN</a>
+                        <a class="header-top__language--en" href="cart-en.html">EN</a>
                     </div>
                     <a class="logo" href="index.html">
                         <img class="logo__img" src="images/icons/logo.svg" alt="header logo">
@@ -40,7 +40,7 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">Головна</a>
+                                <a class="menu__list-link" href="index.html">Головна</a>
                             </li>
                             <li class="menu__list-item">
                                 <a class="menu__list-link" href="pizza.html">Піца</a>
@@ -62,7 +62,99 @@
     </header>
 
     <main class="main">
+        <section class="top">
+            <div class="container">
+                <div class="breadcrumps">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="index.html">Головна</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Кошик</span>
+                        </li>
+                    </ul>
+                </div>
+                <h2 class="top__title">
+                    Кошик
+                </h2>
+            </div>
+        </section>
 
+        <div class="cart">
+            <div class="container">
+                <ul class="cart__list">
+                    <li class="cart__item">
+                        <div class="cart__item--left">
+                            <div class="cart__img-wrapper">
+                                <img class="cart__img" src="images/pizza/pizza1.png" alt="order image">
+                            </div>
+                            <div class="cart__box">
+                                <h4 class="cart__title">Гавайська</h4>
+                                <p class="cart__size">30 см - 500 г</p>
+                            </div>
+                        </div>
+                        <div class="cart__item--right">
+                            <input class="cart__num" type="number" value="1" min="1">
+                            <div class="cart__price">209 грн</div>
+                            <button class="cart__item-btn"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6693 16.6693L3.33594 3.33594M16.6693 3.33594L3.33594 16.6693"
+                                        stroke="black" stroke-width="2" stroke-linecap="round" />
+                                </svg></button>
+                        </div>
+                    </li>
+
+                    <li class="cart__item">
+                        <div class="cart__item--left">
+                            <div class="cart__img-wrapper">
+                                <img class="cart__img" src="images/pizza/pizza7.png" alt="order image">
+                            </div>
+                            <div class="cart__box">
+                                <h4 class="cart__title">Вегетарінська</h4>
+                                <p class="cart__size">30 см - 500 г</p>
+                            </div>
+                        </div>
+                        <div class="cart__item--right">
+                            <input class="cart__num" type="number" value="1" min="1">
+                            <div class="cart__price">189 грн</div>
+                            <button class="cart__item-btn"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6693 16.6693L3.33594 3.33594M16.6693 3.33594L3.33594 16.6693"
+                                        stroke="black" stroke-width="2" stroke-linecap="round" />
+                                </svg></button>
+                        </div>
+                    </li>
+
+                    <li class="cart__item">
+                        <div class="cart__item--left">
+                            <div class="cart__img-wrapper">
+                                <img class="cart__img" src="images/drinks/drink4.png" alt="order image">
+                            </div>
+                            <div class="cart__box">
+                                <h4 class="cart__title">Fanta 0.5 L</h4>
+                                <p class="cart__size">500 г</p>
+                            </div>
+                        </div>
+                        <div class="cart__item--right">
+                            <input class="cart__num" type="number" value="1" min="1">
+                            <div class="cart__price cart__price--drink">29 грн</div>
+                            <button class="cart__item-btn"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6693 16.6693L3.33594 3.33594M16.6693 3.33594L3.33594 16.6693"
+                                        stroke="black" stroke-width="2" stroke-linecap="round" />
+                                </svg></button>
+                        </div>
+                    </li>
+                </ul>
+
+
+                <div class="cart__info">
+                    <div class="cart__sum">Всього до оплати: <span class="cart__sum-number">427 грн</span>
+                    </div>
+                    <button class="cart__btn">Оформити замовлення</button>
+
+                </div>
+            </div>
 
     </main>
 

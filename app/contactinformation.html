@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Контактні дані</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -20,7 +19,7 @@
                     <div class="header-top__language">
                         <a class="header-top__language--ua" href="#">UA</a>
                         <span>|</span>
-                        <a class="header-top__language--en" href="index-en.html">EN</a>
+                        <a class="header-top__language--en" href="contactinformation-en.html">EN</a>
                     </div>
                     <a class="logo" href="index.html">
                         <img class="logo__img" src="images/icons/logo.svg" alt="header logo">
@@ -40,7 +39,7 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">Головна</a>
+                                <a class="menu__list-link" href="index.html">Головна</a>
                             </li>
                             <li class="menu__list-item">
                                 <a class="menu__list-link" href="pizza.html">Піца</a>
@@ -62,8 +61,50 @@
     </header>
 
     <main class="main">
+        <section class="top">
+            <div class="container">
+                <div class="breadcrumps">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="index.html">Головна</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="personalaccount.html">Особистий кабінет</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Контактні дані</span>
+                        </li>
+                    </ul>
+                </div>
+                <h2 class="top__title">
+                    Контактні дані
+                </h2>
+            </div>
+        </section>
 
-
+        <section class="contactinformation">
+            <div class="container">
+                <form class="contactinformation__form" action="#">
+                    <label class="contactinformation__label">
+                        Ім'я:
+                        <input class="contactinformation__input" type="text">
+                    </label>
+                    <label class="contactinformation__label">
+                        Прізвище:
+                        <input class="contactinformation__input" type="text">
+                    </label>
+                    <label class="contactinformation__label">
+                        По-батькові:
+                        <input class="contactinformation__input" type="text">
+                    </label>
+                    <label class="contactinformation__label">
+                        Телефон:
+                        <input class="contactinformation__input" type="text">
+                    </label>
+                    <button class="contactinformation__btn" type="submit">Змінити</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">

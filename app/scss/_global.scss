@@ -19,3 +19,43 @@ body{
     padding: 0 15px;
 }
 
+
+
+.top{
+    &__title{
+        text-align: center;
+        @extend %inter-700;
+        font-size: 30px;
+        color: $moreblack;
+        margin-top: 5px;
+    }
+}
+
+.breadcrumbs{
+    &__list{
+        display: flex;
+        justify-content: center;
+        @extend %roboto-500;
+        font-size: 18px;
+    }
+    &__link{
+        color: $moreblack;
+    }
+    &__item{
+        padding-right: 18px;
+        position: relative;
+        &::after{
+          content: '/';
+          position: absolute;
+          top: 0px;
+          right: 5px;
+        }
+        &:last-child{
+            padding-right: 0;
+            &::after{
+                display: none;
+            }
+        }
+    }
+
+}
