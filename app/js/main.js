@@ -1,5 +1,7 @@
 $(function () {
 
+    $('.cart__num').styler();
+
     $('.top-slider__inner').slick({
         dots: true,
         arrows: false,
