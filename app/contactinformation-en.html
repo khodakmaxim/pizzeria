@@ -5,23 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Contact information</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.min.css">
-
-
-
 </head>
 
 <body>
-
     <header class="header header-en">
         <div class="container">
             <div class="header__inner">
                 <div class="header-top">
                     <a class="header-top__phone" href="tel:+380936721817">+38 (093) 672-18-17</a>
                     <div class="header-top__language">
-                        <a class="header-top__language--ua" href="index.html">UA</a>
+                        <a class="header-top__language--ua" href="contactinformation.html">UA</a>
                         <span>|</span>
                         <a class="header-top__language--en" href="#">EN</a>
                     </div>
@@ -43,7 +39,7 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">Home</a>
+                                <a class="menu__list-link" href="index-en.html">Home</a>
                             </li>
                             <li class="menu__list-item">
                                 <a class="menu__list-link" href="pizza-en.html">Pizza</a>
@@ -71,7 +67,7 @@
                 <div class="header-top">
                     <a class="header-top__phone" href="tel:+380936721817">+38 (093) 672-18-17</a>
                     <div class="header-top__language">
-                        <a class="header-top__language--ua" href="index.html">UA</a>
+                        <a class="header-top__language--ua" href="contactinformation.html">UA</a>
                         <span>|</span>
                         <a class="header-top__language--en" href="#">EN</a>
                     </div>
@@ -91,7 +87,7 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">Home</a>
+                                <a class="menu__list-link" href="index-en.html">Home</a>
                             </li>
                             <li class="menu__list-item">
                                 <a class="menu__list-link" href="pizza-en.html">Pizza</a>
@@ -113,52 +109,52 @@
     </header> -->
 
     <main class="main">
-        <section class="top-slider">
+        <section class="top">
             <div class="container">
-                <div class="top-slider__inner">
-                    <div class="top-slider__item">
-                        <img class="top-slider__img" src="images/home/slider1.jpg" alt="top slider image">
-                    </div>
-                    <div class="top-slider__item">
-                        <img class="top-slider__img" src="images/home/slider2.jpg" alt="top slider image">
-                    </div>
-                    <div class="top-slider__item">
-                        <img class="top-slider__img" src="images/home/slider3.jpg" alt="top slider image">
-                    </div>
+                <div class="breadcrumps">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="index-en.html">Home</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="personalaccount-en.html">Personal account</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Contact information</span>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-
-        <section class="info">
-            <div class="container">
-                <h1 class="info__title">
-                    PIZZA MAX - is a new pizza delivery in the city of Vyshnevе!
-                </h1>
-                <p class="info__text info__text--first">
-                    • Our pizzas are real Italian cuisine with the best ingredients.
-                </p>
-                <p class="info__text info__text--second">
-                    • Our chefs are real professionals who prepare each pizza with love and attention to detail.
-                </p>
-                <p class="info__text info__text--third">
-                    • We support an ecological approach, using only natural ingredients and packaging.
-                </p>
-                <h2 class="info__subtitle">
-                    Make your day even more delicious and pleasant with our pizzeria!
+                <h2 class="top__title">
+                    Contact information
                 </h2>
             </div>
         </section>
 
-
-        <section class="text-map">
+        <section class="contactinformation">
             <div class="container">
-                <p class="text-map__address">
-                    We are located at the address: 42 Evropeyska Street, Vyshneve
-                </p>
-                <div id="map"></div>
+                <form class="contactinformation__form" action="#">
+                    <label class="contactinformation__label">
+                        Name:
+                        <input class="contactinformation__input" type="text">
+                    </label>
+                    <label class="contactinformation__label">
+                        Last name:
+                        <input class="contactinformation__input" type="text">
+                    </label>
+                    <label class="contactinformation__label">
+                        Patronymic:
+                        <input class="contactinformation__input" type="text">
+                    </label>
+                    <label class="contactinformation__label">
+                        Phone number:
+                        <input class="contactinformation__input" type="text">
+                    </label>
+                    <button class="contactinformation__btn" type="submit">Change</button>
+                </form>
             </div>
         </section>
     </main>
+
 
     <footer class="footer footer-en">
         <div class="container">
@@ -279,9 +275,7 @@
         </div>
     </footer> -->
 
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-        defer></script>
+
     <script src="js/main.min.js"></script>
 </body>
 

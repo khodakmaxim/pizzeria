@@ -570,6 +570,12 @@ margin-bottom: 60px;
 }
 
 
+.deliveryandpayment-en{
+    .delivery__text:nth-child(4) {
+        max-width: 1015px;
+    }
+}
+
 .pizza{
     margin-top: 85px;
     margin-bottom: 85px;
@@ -660,6 +666,19 @@ margin-bottom: 60px;
     }
     }
 }
+
+.pizza-en{
+    .pizza__item-btn{
+        font-size: 15px;
+    }
+}
+
+.drinks-en{
+    .drinks__item-btn{
+        font-size: 15px;
+    }
+}
+
 
 .drinks{
   margin-top: 85px;
@@ -790,6 +809,12 @@ margin-bottom: 60px;
 }
 
 
+.signup-en{
+    .signup__btn{
+        width: 170px;
+    }
+}
+
 .login{
     
     padding-top: 60px;
@@ -851,6 +876,13 @@ margin-bottom: 60px;
     }
 
 
+}
+
+
+.login-en{
+    .login__btn{
+        width: 170px;
+    }
 }
 
 

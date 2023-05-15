@@ -5,12 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Pizza</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.min.css">
-
-
-
 </head>
 
 <body>
@@ -21,7 +18,7 @@
                 <div class="header-top">
                     <a class="header-top__phone" href="tel:+380936721817">+38 (093) 672-18-17</a>
                     <div class="header-top__language">
-                        <a class="header-top__language--ua" href="index.html">UA</a>
+                        <a class="header-top__language--ua" href="pizza.html">UA</a>
                         <span>|</span>
                         <a class="header-top__language--en" href="#">EN</a>
                     </div>
@@ -43,10 +40,10 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">Home</a>
+                                <a class="menu__list-link" href="index-en.html">Home</a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="pizza-en.html">Pizza</a>
+                                <a class="menu__list-link" href="#">Pizza</a>
                             </li>
                             <li class="menu__list-item">
                                 <a class="menu__list-link" href="drinks-en.html">Drinks</a>
@@ -71,7 +68,7 @@
                 <div class="header-top">
                     <a class="header-top__phone" href="tel:+380936721817">+38 (093) 672-18-17</a>
                     <div class="header-top__language">
-                        <a class="header-top__language--ua" href="index.html">UA</a>
+                        <a class="header-top__language--ua" href="pizza.html">UA</a>
                         <span>|</span>
                         <a class="header-top__language--en" href="#">EN</a>
                     </div>
@@ -91,10 +88,10 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">Home</a>
+                                <a class="menu__list-link" href="index-en.html">Home</a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="pizza-en.html">Pizza</a>
+                                <a class="menu__list-link" href="#">Pizza</a>
                             </li>
                             <li class="menu__list-item">
                                 <a class="menu__list-link" href="drinks-en.html">Drinks</a>
@@ -112,52 +109,167 @@
         </div>
     </header> -->
 
-    <main class="main">
-        <section class="top-slider">
-            <div class="container">
-                <div class="top-slider__inner">
-                    <div class="top-slider__item">
-                        <img class="top-slider__img" src="images/home/slider1.jpg" alt="top slider image">
-                    </div>
-                    <div class="top-slider__item">
-                        <img class="top-slider__img" src="images/home/slider2.jpg" alt="top slider image">
-                    </div>
-                    <div class="top-slider__item">
-                        <img class="top-slider__img" src="images/home/slider3.jpg" alt="top slider image">
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="info">
+    <main class="main">
+        <section class="top">
             <div class="container">
-                <h1 class="info__title">
-                    PIZZA MAX - is a new pizza delivery in the city of Vyshnevе!
-                </h1>
-                <p class="info__text info__text--first">
-                    • Our pizzas are real Italian cuisine with the best ingredients.
-                </p>
-                <p class="info__text info__text--second">
-                    • Our chefs are real professionals who prepare each pizza with love and attention to detail.
-                </p>
-                <p class="info__text info__text--third">
-                    • We support an ecological approach, using only natural ingredients and packaging.
-                </p>
-                <h2 class="info__subtitle">
-                    Make your day even more delicious and pleasant with our pizzeria!
+                <div class="breadcrumps">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="index-en.html">Home</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Pizza</span>
+                        </li>
+                    </ul>
+                </div>
+                <h2 class="top__title">
+                    Pizza
                 </h2>
             </div>
         </section>
 
-
-        <section class="text-map">
+        <section class="pizza pizza-en">
             <div class="container">
-                <p class="text-map__address">
-                    We are located at the address: 42 Evropeyska Street, Vyshneve
-                </p>
-                <div id="map"></div>
+
+                <div class="pizza__items">
+                    <div class="pizza__item">
+                        <img class="pizza__item-img pizza__item-img--1" src="images/pizza/pizza1.png" alt="">
+                        <h4 class="pizza__item-title">Hawaiian</h4>
+                        <p class="pizza__item-descr">pineapples, chicken, mozzarella, <br>
+                            cheese sauce</p>
+                        <p class="pizza__item-size">30 cm - 500 g</p>
+                        <div class="pizza__item-box">
+                            <div class="pizza__item-price">209 uah</div>
+                            <button class="pizza__item-btn" type="submit">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="pizza__item">
+                        <img class="pizza__item-img pizza__item-img--2" src="images/pizza/pizza2.png" alt="">
+                        <h4 class="pizza__item-title">Four Cheeses</h4>
+                        <p class="pizza__item-descr">mozzarella, parmesan, dor bleu cheese, <br>
+                            cheese sauce, feta
+                        <p class="pizza__item-size">30 cm - 500 g</p>
+                        <div class="pizza__item-box">
+                            <div class="pizza__item-price">249 uah</div>
+                            <button class="pizza__item-btn" type="submit">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="pizza__item">
+                        <img class="pizza__item-img" src="images/pizza/pizza3.png" alt="">
+                        <h4 class="pizza__item-title">Pepperoni</h4>
+                        <p class="pizza__item-descr">mozzarella, salami, <br>
+                            tomato sauce</p>
+                        <p class="pizza__item-size">30 cm - 500 g</p>
+                        <div class="pizza__item-box">
+                            <div class="pizza__item-price">199 uah</div>
+                            <button class="pizza__item-btn" type="submit">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="pizza__item">
+                        <img class="pizza__item-img" src="images/pizza/pizza4.png" alt="">
+                        <h4 class="pizza__item-title">Margarita</h4>
+                        <p class="pizza__item-descr">mozzarella, tomatoes,<br>
+                            tomato sauce</p>
+                        <p class="pizza__item-size">30 cm - 500 g</p>
+                        <div class="pizza__item-box">
+                            <div class="pizza__item-price">179 uah</div>
+                            <button class="pizza__item-btn" type="submit">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="pizza__item">
+                        <img class="pizza__item-img pizza__item-img--5" src="images/pizza/pizza5.png" alt="">
+                        <h4 class="pizza__item-title">Hunting</h4>
+                        <p class="pizza__item-descr">bacon, hunting sausages, mozzarella, <br>
+                            mushrooms, barbecue sauce, onion</p>
+                        <p class="pizza__item-size">30 cm - 500 g</p>
+                        <div class="pizza__item-box">
+                            <div class="pizza__item-price">229 uah</div>
+                            <button class="pizza__item-btn" type="submit">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="pizza__item">
+                        <img class="pizza__item-img" src="images/pizza/pizza6.png" alt="">
+                        <h4 class="pizza__item-title">Ham and Mushrooms</h4>
+                        <p class="pizza__item-descr">mozzarella, ham, mushrooms, <br>
+                            tomato sauce</p>
+                        <p class="pizza__item-size">30 cm - 500 g</p>
+                        <div class="pizza__item-box">
+                            <div class="pizza__item-price">219 uah</div>
+                            <button class="pizza__item-btn" type="submit">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="pizza__item">
+                        <img class="pizza__item-img" src="images/pizza/pizza7.png" alt="">
+                        <h4 class="pizza__item-title">Vegetarian</h4>
+                        <p class="pizza__item-descr">sun-dried tomatoes, olives, tomato sauce, <br>
+                            provencal herbs, arugula, mushrooms</p>
+                        <p class="pizza__item-size">30 cm - 500 g</p>
+                        <div class="pizza__item-box">
+                            <div class="pizza__item-price">189 uah</div>
+                            <button class="pizza__item-btn" type="submit">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="pizza__item">
+                        <img class="pizza__item-img" src="images/pizza/pizza8.png" alt="">
+                        <h4 class="pizza__item-title">Meaty</h4>
+                        <p class="pizza__item-descr">mozzarella, salami, ham, bacon, <br>
+                            tomato sauce</p>
+                        <p class="pizza__item-size">30 cm - 500 g</p>
+                        <div class="pizza__item-box">
+                            <div class="pizza__item-price">239 uah</div>
+                            <button class="pizza__item-btn" type="submit">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="pizza__item">
+                        <img class="pizza__item-img" src="images/pizza/pizza9.png" alt="">
+                        <h4 class="pizza__item-title">Barbecue</h4>
+                        <p class="pizza__item-descr">bacon, chicken, mozzarella, mushrooms, <br>
+                            barbecue sauce, onion</p>
+                        <p class="pizza__item-size">30 cm - 500 g</p>
+                        <div class="pizza__item-box">
+                            <div class="pizza__item-price">209 uah</div>
+                            <button class="pizza__item-btn" type="submit">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="pizza__item">
+                        <img class="pizza__item-img" src="images/pizza/pizza10.png" alt="">
+                        <h4 class="pizza__item-title">Bavaria</h4>
+                        <p class="pizza__item-descr">salami, mushrooms, mustard sauce, <br>
+                            bavarian sausages, mozzarella, pepper</p>
+                        <p class="pizza__item-size">30 cm - 500 g</p>
+                        <div class="pizza__item-box">
+                            <div class="pizza__item-price">229 uah</div>
+                            <button class="pizza__item-btn" type="submit">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="pizza__item">
+                        <img class="pizza__item-img" src="images/pizza/pizza11.png" alt="">
+                        <h4 class="pizza__item-title">Carbonara</h4>
+                        <p class="pizza__item-descr">bacon, mozzarella, parmesan, ham, <br>
+                            cheese sauce, onion</p>
+                        <p class="pizza__item-size">30 cm - 500 g</p>
+                        <div class="pizza__item-box">
+                            <div class="pizza__item-price">219 uah</div>
+                            <button class="pizza__item-btn" type="submit">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="pizza__item">
+                        <img class="pizza__item-img" src="images/pizza/pizza12.png" alt="">
+                        <h4 class="pizza__item-title">4 Seasons</h4>
+                        <p class="pizza__item-descr">tomatoes, dor bleu cheese, mozzarella, <br>
+                            salami, mushrooms, tomato sauce</p>
+                        <p class="pizza__item-size">30 cm - 500 g</p>
+                        <div class="pizza__item-box">
+                            <div class="pizza__item-price">199 uah</div>
+                            <button class="pizza__item-btn" type="submit">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
+
     </main>
 
     <footer class="footer footer-en">
@@ -279,9 +391,7 @@
         </div>
     </footer> -->
 
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-        defer></script>
+
     <script src="js/main.min.js"></script>
 </body>
 

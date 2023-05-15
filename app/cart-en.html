@@ -5,12 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Cart</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="stylesheet" href="css/style.min.css">
-
-
-
 </head>
 
 <body>
@@ -21,7 +18,7 @@
                 <div class="header-top">
                     <a class="header-top__phone" href="tel:+380936721817">+38 (093) 672-18-17</a>
                     <div class="header-top__language">
-                        <a class="header-top__language--ua" href="index.html">UA</a>
+                        <a class="header-top__language--ua" href="cart.html">UA</a>
                         <span>|</span>
                         <a class="header-top__language--en" href="#">EN</a>
                     </div>
@@ -43,7 +40,7 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">Home</a>
+                                <a class="menu__list-link" href="index-en.html">Home</a>
                             </li>
                             <li class="menu__list-item">
                                 <a class="menu__list-link" href="pizza-en.html">Pizza</a>
@@ -71,7 +68,7 @@
                 <div class="header-top">
                     <a class="header-top__phone" href="tel:+380936721817">+38 (093) 672-18-17</a>
                     <div class="header-top__language">
-                        <a class="header-top__language--ua" href="index.html">UA</a>
+                        <a class="header-top__language--ua" href="cart.html">UA</a>
                         <span>|</span>
                         <a class="header-top__language--en" href="#">EN</a>
                     </div>
@@ -91,7 +88,7 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="#">Home</a>
+                                <a class="menu__list-link" href="index-en.html">Home</a>
                             </li>
                             <li class="menu__list-item">
                                 <a class="menu__list-link" href="pizza-en.html">Pizza</a>
@@ -113,51 +110,100 @@
     </header> -->
 
     <main class="main">
-        <section class="top-slider">
+        <section class="top">
             <div class="container">
-                <div class="top-slider__inner">
-                    <div class="top-slider__item">
-                        <img class="top-slider__img" src="images/home/slider1.jpg" alt="top slider image">
-                    </div>
-                    <div class="top-slider__item">
-                        <img class="top-slider__img" src="images/home/slider2.jpg" alt="top slider image">
-                    </div>
-                    <div class="top-slider__item">
-                        <img class="top-slider__img" src="images/home/slider3.jpg" alt="top slider image">
-                    </div>
+                <div class="breadcrumps">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="index-en.html">Home</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Cart</span>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-
-        <section class="info">
-            <div class="container">
-                <h1 class="info__title">
-                    PIZZA MAX - is a new pizza delivery in the city of Vyshnevе!
-                </h1>
-                <p class="info__text info__text--first">
-                    • Our pizzas are real Italian cuisine with the best ingredients.
-                </p>
-                <p class="info__text info__text--second">
-                    • Our chefs are real professionals who prepare each pizza with love and attention to detail.
-                </p>
-                <p class="info__text info__text--third">
-                    • We support an ecological approach, using only natural ingredients and packaging.
-                </p>
-                <h2 class="info__subtitle">
-                    Make your day even more delicious and pleasant with our pizzeria!
+                <h2 class="top__title">
+                    Cart
                 </h2>
             </div>
         </section>
 
-
-        <section class="text-map">
+        <div class="cart">
             <div class="container">
-                <p class="text-map__address">
-                    We are located at the address: 42 Evropeyska Street, Vyshneve
-                </p>
-                <div id="map"></div>
+                <ul class="cart__list">
+                    <li class="cart__item">
+                        <div class="cart__item--left">
+                            <div class="cart__img-wrapper">
+                                <img class="cart__img" src="images/pizza/pizza1.png" alt="order image">
+                            </div>
+                            <div class="cart__box">
+                                <h4 class="cart__title">Hawaiian</h4>
+                                <p class="cart__size">30 cm - 500 g</p>
+                            </div>
+                        </div>
+                        <div class="cart__item--right">
+                            <input class="cart__num" type="number" value="1" min="1">
+                            <div class="cart__price">209 uah</div>
+                            <button class="cart__item-btn"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6693 16.6693L3.33594 3.33594M16.6693 3.33594L3.33594 16.6693"
+                                        stroke="black" stroke-width="2" stroke-linecap="round" />
+                                </svg></button>
+                        </div>
+                    </li>
+
+                    <li class="cart__item">
+                        <div class="cart__item--left">
+                            <div class="cart__img-wrapper">
+                                <img class="cart__img" src="images/pizza/pizza7.png" alt="order image">
+                            </div>
+                            <div class="cart__box">
+                                <h4 class="cart__title">Vegetarian</h4>
+                                <p class="cart__size">30 cm - 500 g</p>
+                            </div>
+                        </div>
+                        <div class="cart__item--right">
+                            <input class="cart__num" type="number" value="1" min="1">
+                            <div class="cart__price">189 uah</div>
+                            <button class="cart__item-btn"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6693 16.6693L3.33594 3.33594M16.6693 3.33594L3.33594 16.6693"
+                                        stroke="black" stroke-width="2" stroke-linecap="round" />
+                                </svg></button>
+                        </div>
+                    </li>
+
+                    <li class="cart__item">
+                        <div class="cart__item--left">
+                            <div class="cart__img-wrapper">
+                                <img class="cart__img" src="images/drinks/drink4.png" alt="order image">
+                            </div>
+                            <div class="cart__box">
+                                <h4 class="cart__title">Fanta 0.5 L</h4>
+                                <p class="cart__size">500 g</p>
+                            </div>
+                        </div>
+                        <div class="cart__item--right">
+                            <input class="cart__num" type="number" value="1" min="1">
+                            <div class="cart__price cart__price--drink">29 uah</div>
+                            <button class="cart__item-btn"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6693 16.6693L3.33594 3.33594M16.6693 3.33594L3.33594 16.6693"
+                                        stroke="black" stroke-width="2" stroke-linecap="round" />
+                                </svg></button>
+                        </div>
+                    </li>
+                </ul>
+
+
+                <div class="cart__info">
+                    <div class="cart__sum">Total payable: <span class="cart__sum-number">427 uah</span>
+                    </div>
+                    <button class="cart__btn">Placing an order</button>
+
+                </div>
             </div>
-        </section>
+
     </main>
 
     <footer class="footer footer-en">
@@ -279,9 +325,6 @@
         </div>
     </footer> -->
 
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-        defer></script>
     <script src="js/main.min.js"></script>
 </body>
 
